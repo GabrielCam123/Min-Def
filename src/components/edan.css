@@ -1,0 +1,10 @@
+.contenedorEdan{
+    color: black;
+    width: 380px;
+    height: 28px;
+    border: solid black;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
