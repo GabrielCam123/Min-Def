@@ -1,15 +1,16 @@
 import React from 'react'
 import Header from "./header"
 import "./Formulario.css"
-import Edan from "./edan"
+import Edan from './componentes/compEdan'
+import DatosG from './componentes/compDatosG'
 function Formulario() {
   return (
     <div classname='estiloFormulario'>
         <Header/>
         <div>
-          <Edan/>          
+          <Edan/>
+          <DatosG/>
         </div>
-
     </div>
   )
 }

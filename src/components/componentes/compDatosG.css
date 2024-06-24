@@ -1,0 +1,14 @@
+.contenedorcompDatosG{
+    display: flex;
+    border: solid black;
+    margin-top: 10px;
+}
+.localidad{
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+}
+.datoseventos{
+    display: inline-block;
+    width: 620px;
+}

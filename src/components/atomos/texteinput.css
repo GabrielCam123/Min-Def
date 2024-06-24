@@ -1,0 +1,17 @@
+.contenedorTexteinput{
+    display: flex;
+    width: 320px;
+    color: black;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.textinput{
+    background-color: white;
+    border: solid black;
+    height: 30px;
+    color: black;
+}
+.textp{
+    /* width:115px; */
+}
