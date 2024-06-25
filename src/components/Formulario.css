@@ -1,5 +1,5 @@
 .estiloFormulario{
-    width: 1280px;
-    height: 768px;
+    width: autopx;
+    height: 600px;
     background-color: white;
 }
