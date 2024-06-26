@@ -1,20 +1,14 @@
 import React from 'react'
-import Header from "./header"
 import "./Formulario.css"
-import Edan from './componentes/compEdan'
-import DatosG from './componentes/compDatosG'
-import InfoP from './componentes/compInfoP'
-import InfoM from './componentes/compInfoM'
+import Hoja1 from './molesculas/Hoja1'
+import Hoja2 from './molesculas/Hoja2'
+import Hoja3 from './molesculas/Hoja3'
 function Formulario() {
   return (
     <div classname='estiloFormulario'>
-        <Header/>
-        <div>
-          <Edan/>
-          <DatosG/>
-          <InfoP/>
-          <InfoM/>
-        </div>
+      <Hoja1/>
+      <Hoja2/>
+      <Hoja3/>
     </div>
   )
 }

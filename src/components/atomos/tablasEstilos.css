@@ -29,3 +29,8 @@ td input[type="checkbox"]{
     border-collapse:collapse ;
     margin: 0;
 }
+tfoot{
+    background-color: rgba(249, 190, 143, 1);
+    border: solid black ;
+    border-collapse: collapse;
+}
