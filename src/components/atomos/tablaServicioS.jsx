@@ -5,17 +5,17 @@ function tablaServicioS() {
     <table>
         <thead> 
             <tr>
-                <th>N°</th>
-                <th>Nombre del establecimiento de salud</th>
-                <th>Localidad/Comunidad</th>
-                <th>1er Nivel</th>
-                <th>2do Nivel</th>
-                <th>3er Nivel</th>
-                <th>Daño Parcial</th>
-                <th>Daño Total</th>
-                <th>N° Med.</th>
-                <th>N° Enf.</th>
-                <th>N° Otros.</th>
+                <th style={{width:("10px")}}>N°</th>
+                <th style={{width:("10px")}}>Nombre del establecimiento de salud</th>
+                <th style={{width:("10px")}}>Localidad/Comunidad</th>
+                <th style={{width:("10px")}}>1er Nivel</th>
+                <th style={{width:("10px")}}>2do Nivel</th>
+                <th style={{width:("10px")}}>3er Nivel</th>
+                <th style={{width:("10px")}}>Daño Parcial</th>
+                <th style={{width:("10px")}}>Daño Total</th>
+                <th style={{width:("10px")}}>N° Med.</th>
+                <th style={{width:("10px")}}>N° Enf.</th>
+                <th style={{width:("10px")}}>N° Otros.</th>
             </tr>
         </thead>
         <tbody>

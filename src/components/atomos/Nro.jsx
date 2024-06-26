@@ -2,7 +2,7 @@ import React from 'react'
 import "./Nro.css"
 function Nro() {
   return (
-    <div className='contenedorNro'>Nro</div>
+    <div className='contenedorNro'><h2>Nro.</h2></div>
   )
 }
 

@@ -3,7 +3,7 @@ import "./edan.css"
 function edan() {
   return (
     <div className='contenedorEdan'>
-      <p> EVALUACION DE DAÑOS Y  ANALISIS DE NECESIDADES (EDAN)   </p>
+      <h2> EVALUACION DE DAÑOS Y  ANALISIS DE NECESIDADES (EDAN)   </h2>
     </div>
   )
 }

@@ -10,13 +10,11 @@ thead{
 } 
 th{
     border: solid black 1px;
-    width: 100px;
     margin: 0;
     border-collapse: collapse;
 }
 td{
     border: solid black 1px;
-    width: 100px;
     margin: 0;
     padding: 0;
     border-collapse: collapse;

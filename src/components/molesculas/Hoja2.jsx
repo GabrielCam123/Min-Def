@@ -12,7 +12,7 @@ function Hoja2() {
               <ImpactoS/>
               <ImpactoE/>
             </div>
-            <h4 style={{margin:("40px")}}>Sello del Gobierno Autonomo Municipal</h4>
+            <footer>Sello del Gobierno Autonomo Municipal</footer>
         </div>
       )
 }

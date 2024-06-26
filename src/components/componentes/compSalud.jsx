@@ -6,7 +6,10 @@ function compSalud() {
     <div className='contenedorcompSalud'>
         <h3>4. SALUD</h3>
         <h4>4.1 Daños en servicios de salud</h4>
-        <ServicioS/>
+        <div>
+          <ServicioS/>
+        </div>
+
     </div>
   )
 }
