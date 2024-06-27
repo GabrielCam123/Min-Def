@@ -1,13 +1,14 @@
-.table,thead{
+.table{
     border: solid black;
     margin: 0;
     border-collapse: collapse;
+    width: 100%;
 }
 .thead{
     background-color: rgba(249, 190, 143, 1);
     border: solid black ;
     border-collapse: collapse;
-}
+} 
 .th{
     border: solid black 1px;
     margin: 0;
@@ -16,19 +17,24 @@
 .td{
     border: solid black 1px;
     margin: 0;
-    padding: 0;
+    padding: 2px;
     border-collapse: collapse;
     justify-content: center;
 }
-.td input[type="checkbox"]{
+/* td input[type="checkbox"]{
     width: 100%;
     height: 18px;
     padding: 0 100%;
     border-collapse:collapse ;
     margin: 0;
-}
+} */
 .tfoot{
     background-color: rgba(249, 190, 143, 1);
     border: solid black ;
     border-collapse: collapse;
+}
+.inputtext{
+    width: 80%;
+    height: 80%;
+    border: transparent;
 }

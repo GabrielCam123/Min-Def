@@ -1,30 +1,30 @@
 import React from 'react'
-import "./tablasEstilos.css"
+import "./tablaEventos.css"
 function tablaEventos() {
   return (
-    <table>
-        <thead> 
+    <table className='tableeventos'>
+        <thead className='theadeventos'> 
             <tr>
-                <th>Inundacion</th>
-                <th>Riada</th>
-                <th>Deslizamineto</th>
-                <th>Helada</th>
-                <th>Granizada</th>
-                <th>Sequia</th>
-                <th>Incendios</th>
-                <th>Otros</th>
+                <th className='theventos'>Inundacion</th>
+                <th className='theventos'>Riada</th>
+                <th className='theventos'>Deslizamineto</th>
+                <th className='theventos'>Helada</th>
+                <th className='theventos'>Granizada</th>
+                <th className='theventos'>Sequia</th>
+                <th className='theventos'>Incendios</th>
+                <th className='theventos'>Otros</th>
             </tr>
         </thead>
         <tbody>
           <tr>
-            <td><input type="checkbox" name="" id="" /></td>
-            <td><input type="checkbox" name="" id="" /></td>
-            <td><input type="checkbox" name="" id="" /></td>
-            <td><input type="checkbox" name="" id="" /></td>
-            <td><input type="checkbox" name="" id="" /></td>
-            <td><input type="checkbox" name="" id="" /></td>
-            <td><input type="checkbox" name="" id="" /></td>
-            <td><input type="checkbox" name="" id="" /></td>
+            <td className='tdeventos'><input type="checkbox" name="" id="" /></td>
+            <td className='tdeventos'><input type="checkbox" name="" id="" /></td>
+            <td className='tdeventos'><input type="checkbox" name="" id="" /></td>
+            <td className='tdeventos'><input type="checkbox" name="" id="" /></td>
+            <td className='tdeventos'><input type="checkbox" name="" id="" /></td>
+            <td className='tdeventos'><input type="checkbox" name="" id="" /></td>
+            <td className='tdeventos'><input type="checkbox" name="" id="" /></td>
+            <td className='tdeventos'><input type="checkbox" name="" id="" /></td>
           </tr>
         </tbody>
 
