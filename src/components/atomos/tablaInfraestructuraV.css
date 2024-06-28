@@ -1,20 +1,24 @@
-.tableServiciosS{
+.tableInfraestructuraV
+{
     border: solid black;
     margin: 0;
     border-collapse: collapse;
     width: 100%;
 }
-.theadServiciosS{
+.theadInfraestructuraV
+{
     background-color: rgba(249, 190, 143, 1);
     border: solid black ;
     border-collapse: collapse;
 }
-.thServiciosS{
+.thInfraestructuraV
+{
     border: solid black 1px;
     margin: 0;
     border-collapse: collapse;
 }
-.tdServiciosS{
+.tdInfraestructuraV
+{
     border: solid black 1px;
     margin: 0;
     padding: 0;

@@ -1,62 +1,29 @@
 import React from 'react'
-import "./tablasEstilos.css"
+import "./tablaAfectacionA.css"
 function tablaAfectacionA() {
   return (
-    <table>
-        <thead> 
+    <table className='tableAfectacionA'>
+        <thead className='theadAfectacionA'> 
             <tr>
-                <th>Establecimiento Educativo</th>
-                <th>N° Estudiantes</th>
-                <th>N° Profesores</th>
-                <th>N° Adminis.</th>
-                <th>Observaciones</th>
+                <th className='thAfectacionA'>Establecimiento Educativo</th>
+                <th className='thAfectacionA'colSpan="3" style={{padding:0}}><p>Total Afectados</p>
+                  <div style={{display:"flex",padding:"0"}}>
+                    <th style={{width:"33%",padding:0,borderTop:"solid black 1px"}}>N° Estudiantes</th>
+                    <th style={{width:"33%",padding:0,borderTop:"solid black 1px"}}>N° Profesores</th>
+                    <th style={{width:"33%",padding:0,borderTop:"solid black 1px"}}>N° Adminis.</th>
+                  </div>
+                </th>
             </tr>
         </thead>
         <tbody>
           <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'>a</td>
+            <td className='tdAfectacionA'>a</td>
+            <td className='tdAfectacionA'>a</td>
+            <td className='tdAfectacionA'>a</td>
           </tr>
         </tbody>
-        <tfoot>
+        {/* <tfoot>
             <tr>
                 <td>Total</td>
                 <td></td>
@@ -64,7 +31,7 @@ function tablaAfectacionA() {
                 <td></td>
                 <td></td>
             </tr>
-        </tfoot>
+        </tfoot> */}
     </table>
   )
 }
