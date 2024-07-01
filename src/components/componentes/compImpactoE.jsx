@@ -2,7 +2,7 @@ import React from 'react'
 import "./compImpactoE.css"
 import DañosU from '../atomos/tablaDañosU'
 import AfectacionA from '../atomos/tablaAfectacionA'
-import Observaciones from '../atomos/Observaciones'
+import ObservacionesA from '../atomos/ObservacionesA'
 function compImpactoE() {
   return (
     <div className='contenedorImpactoE'>
@@ -14,9 +14,7 @@ function compImpactoE() {
           <div style={{width:"60%"}}>
             <AfectacionA/>
           </div>
-          <div style={{width:"38.5%",height:"100%"}}>
-            <Observaciones/>
-          </div>
+            <ObservacionesA/>
         </div>
 
 

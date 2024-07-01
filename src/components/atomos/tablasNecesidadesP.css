@@ -1,23 +1,23 @@
-.tableAfectacionA
+.tableNecesidadesP
 {
     border: solid black;
     margin: 0;
     border-collapse: collapse;
     width: 100%;
 }
-.theadAfectacionA
+.theadNecesidadesP
 {
     background-color: rgba(249, 190, 143, 1);
     border: solid black ;
     border-collapse: collapse;
 }
-.thAfectacionA
+.thNecesidadesP
 {
     border: solid black 1px;
     margin: 0;
     border-collapse: collapse;
 }
-.tdAfectacionA
+.tdNecesidadesP
 {
     border: solid black 1px;
     margin: 0;
@@ -32,7 +32,7 @@
     border-collapse:collapse ;
     margin: 0;
 }
-.tfootAfectacionA{
+.tfootNecesidadesP{
     background-color: rgba(249, 190, 143, 1);
     border: solid black ;
     border-collapse: collapse;

@@ -1,69 +1,81 @@
 import React from 'react'
-import "./tablasEstilos.css"
+import "./tablaDañoA.css"
 function tablaDañoA() {
   return (
-    <table>
-        <thead> 
+    <table className='tableDañoA'>
+        <thead className='theadDañoA'> 
             <tr>
-                <th>N°</th>
-                <th>Tipo Cultivo</th>
-                <th>Has. Afectada</th>
-                <th>Has. Perdidas</th>
-                <th>Necesidades Inmediatas</th>
-                <th>Observaciones</th>
+                <th className='thDañoA' style={{width:"5%"}}>N°</th>
+                <th className='thDañoA' style={{width:"15%"}}>Tipo Cultivo</th>
+                <th className='thDañoA' style={{width:"15%"}}>Has. Afectada</th>
+                <th className='thDañoA' style={{width:"15%"}}>Has. Perdidas</th>
+                <th className='thDañoA' style={{width:"25%"}}>Necesidades Inmediatas</th>
+                <th className='thDañoA' style={{width:"25%"}}>Observaciones</th>
             </tr>
         </thead>
         <tbody>
           <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
           </tr>
           <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
           </tr>
           <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
           </tr>
           <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
           </tr>
           <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
           </tr>
           <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td className='tdDañoA'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"95%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+            <td className='tdDañoA'><input style={{width:"97%"}} type="text" name="" id="" /></td>
           </tr>
         </tbody>
-        <tfoot>
+        <tfoot className='tfootDañoA'>
             <tr>
-                <td>Total</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td className='tdDañoA' colSpan="2"><p style={{margin:"4px"}}>Total</p></td>
+                <td className='tdDañoA'></td>
+                <td className='tdDañoA'></td>
             </tr>
         </tfoot>
     </table>

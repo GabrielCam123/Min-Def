@@ -9,7 +9,7 @@ function tablaAfectacionA() {
                 <th className='thAfectacionA'colSpan="3" style={{padding:0}}><p>Total Afectados</p>
                   <div style={{display:"flex",padding:"0"}}>
                     <th style={{width:"33%",padding:0,borderTop:"solid black 1px"}}>N° Estudiantes</th>
-                    <th style={{width:"33%",padding:0,borderTop:"solid black 1px"}}>N° Profesores</th>
+                    <th style={{width:"33%",padding:0,borderTop:"solid black 1px",borderLeft:"solid black 1px",borderRight:"solid black 1px"}}>N° Profesores</th>
                     <th style={{width:"33%",padding:0,borderTop:"solid black 1px"}}>N° Adminis.</th>
                   </div>
                 </th>
@@ -17,21 +17,51 @@ function tablaAfectacionA() {
         </thead>
         <tbody>
           <tr>
-            <td className='tdAfectacionA'>a</td>
-            <td className='tdAfectacionA'>a</td>
-            <td className='tdAfectacionA'>a</td>
-            <td className='tdAfectacionA'>a</td>
+            <td className='tdAfectacionA'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td className='tdAfectacionA'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td className='tdAfectacionA'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td className='tdAfectacionA'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td className='tdAfectacionA'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td className='tdAfectacionA'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
+            <td className='tdAfectacionA'><input style={{width:"94%"}} type="text" name="" id="" /></td>
           </tr>
         </tbody>
-        {/* <tfoot>
+        <tfoot className='tfootAfectacionA'>
             <tr>
-                <td>Total</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td className='tdAfectacionA'>Total</td>
+                <td className='tdAfectacionA'></td>
+                <td className='tdAfectacionA'></td>
+                <td className='tdAfectacionA'></td>
+                <td className='tdAfectacionA'></td>
             </tr>
-        </tfoot> */}
+        </tfoot>
     </table>
   )
 }

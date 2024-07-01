@@ -1,23 +1,23 @@
-.tableAfectacionA
+.tableDañoA
 {
-    border: solid black;
+    /* border: solid black; */
     margin: 0;
     border-collapse: collapse;
     width: 100%;
 }
-.theadAfectacionA
+.theadDañoA
 {
     background-color: rgba(249, 190, 143, 1);
     border: solid black ;
     border-collapse: collapse;
 }
-.thAfectacionA
+.thDañoA
 {
     border: solid black 1px;
     margin: 0;
     border-collapse: collapse;
 }
-.tdAfectacionA
+.tdDañoA
 {
     border: solid black 1px;
     margin: 0;
@@ -32,8 +32,8 @@
     border-collapse:collapse ;
     margin: 0;
 }
-.tfootAfectacionA{
+.tfootDañoA{
     background-color: rgba(249, 190, 143, 1);
-    border: solid black ;
+    /* border: solid black ; */
     border-collapse: collapse;
 }
