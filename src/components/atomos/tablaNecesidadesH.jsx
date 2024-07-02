@@ -1,66 +1,66 @@
 import React from 'react'
-import "./tablasEstilos.css"
+import "./tablaNecesidadesH.css"
 function tablaNecesidadesH() {
   return (
-    <table>
-    <thead> 
+    <table className='tableNecesidadesH'>
+    <thead className='theadNecesidadesH'> 
         <tr>
-            <th>Ayuda Humanitaria</th>
-            <th>SI</th>
-            <th>Observaciones</th>
-            <th>Ayuda Humanitaria</th>
-            <th>SI</th>
-            <th>Observaciones</th>
+            <th className='thNecesidadesH' style={{width:"22%"}}>Ayuda Humanitaria</th>
+            <th className='thNecesidadesH' style={{width:"5%"}}>SI</th>
+            <th className='thNecesidadesH' style={{width:"23%"}}>Observaciones</th>
+            <th className='thNecesidadesH' style={{width:"22%"}}>Ayuda Humanitaria</th>
+            <th className='thNecesidadesH' style={{width:"5%"}}>SI</th>
+            <th className='thNecesidadesH' style={{width:"23%"}}>Observaciones</th>
         </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Alimentos</td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td>Prendas de Vestir</td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'>Alimentos</td>
+        <td className='tdNecesidadesH'><input style={{width:"84%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'>Prendas de Vestir</td>
+        <td className='tdNecesidadesH'><input style={{width:"84%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
       </tr>
       <tr>
-        <td>Refugio y Vivienda</td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td>Herramientas y Accesorios</td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'>Refugio y Vivienda</td>
+        <td className='tdNecesidadesH'><input style={{width:"84%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'>Herramientas y Accesorios</td>
+        <td className='tdNecesidadesH'><input style={{width:"84%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
       </tr>
       <tr>
-      <td>Ropa de Cama</td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td>Almacenamiento de agua</td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'>Almacenamiento de agua</td>
+        <td className='tdNecesidadesH'><input style={{width:"84%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'>Ropa de Cama</td>
+        <td className='tdNecesidadesH'><input style={{width:"84%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
       </tr>
       <tr>
-      <td>Articulos de Higene</td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td>Baños</td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'>Articulos de Higene</td>
+        <td className='tdNecesidadesH'><input style={{width:"84%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'>Baños</td>
+        <td className='tdNecesidadesH'><input style={{width:"84%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
       </tr>
       <tr>
-      <td>Articulos de Cocina</td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'>Articulos de Cocina</td>
+        <td className='tdNecesidadesH'><input style={{width:"84%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"84%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
       </tr>
       <tr>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96.5%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"84%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"84%"}} type="text" name="" id="" /></td>
+        <td className='tdNecesidadesH'><input style={{width:"96%"}} type="text" name="" id="" /></td>
       </tr>
     </tbody>
 

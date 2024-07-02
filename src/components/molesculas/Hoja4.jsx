@@ -14,7 +14,7 @@ function Hoja4() {
             <Responsable/>  
             <Declaratoria/>
         </div>
-        <footer>Sello del Gobierno Autonomo Municipal</footer>
+        <footer style={{fontSize:"20px",fontWeight:"600",textAlign:'right',margin:"20px",textAlignLast:"end"}}>Sello del Gobierno Autonomo Municipal</footer>
     </div>
   )
 }

@@ -10,11 +10,11 @@ function compImpactoA() {
         <h4>9.1 Daños y necesidades en Agricultura</h4>
         <DañoA/>
         <div style={{display:'flex',gap:"1%"}}>
-          <div style={{width:"65%"}}>
+          <div style={{width:"64%"}}>
             <h4>9.2 Daños y Necesidades Pecuarias</h4>
             <DañoN/>
           </div>
-          <div style={{width:"35%"}}>
+          <div style={{width:"36%"}}>
             <h4>9.3 Daño en la Infraestructura Productiva.</h4>
             <DañoI/>
           </div>

@@ -1,98 +1,26 @@
 import React from 'react'
-import "./tablasEstilos.css"
+import "./tablaNombreC.css"
 function tablaNombreC() {
   return (
-    <table>
-    <thead> 
+    <table className='tableNombreC'>
+    <thead className='theadNombreC'> 
         <tr>
-            <th>N°</th>
-            <th>Com./Loc./Barrio</th>
-            <th>N°</th>
-            <th>Com./Loc./Barrio</th>
-            <th>N°</th>
-            <th>Com./Loc./Barrio</th>
+            <th className='thNombreC' style={{width:"5%"}}>N°</th>
+            <th className='thNombreC' style={{width:"25%"}}>Com./Loc./Barrio</th>
+            <th className='thNombreC' style={{width:"5%"}}>N°</th>
+            <th className='thNombreC' style={{width:"25%"}}>Com./Loc./Barrio</th>
+            <th className='thNombreC' style={{width:"5%"}}>N°</th>
+            <th className='thNombreC' style={{width:"25%"}}>Com./Loc./Barrio</th>
         </tr>
     </thead>
     <tbody>
       <tr>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
-        <td><input type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
       </tr>
     </tbody>
 

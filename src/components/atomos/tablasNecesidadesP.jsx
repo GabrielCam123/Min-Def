@@ -84,12 +84,12 @@ function tablasNecesidadesP() {
       <tr>
         <td className='tdNecesidadesP'><p style={{margin:"3px"}}>7</p></td>
         <td className='tdNecesidadesP'><p style={{margin:"3px"}}>Personas con Enfermedad Inhabilitante</p></td>
-        <td className='tdNecesidadesP'><input style={{width:"92%",height:"100%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"91%",height:"100%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"89%",height:"100%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%",height:"100%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%",height:"100%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"97%",height:"100%"}}type="text" name="" id="" /></td>
+        <td className='tdNecesidadesP'><input style={{width:"92%",height:"38px"}}type="text" name="" id="" /></td>
+        <td className='tdNecesidadesP'><input style={{width:"91%",height:"38px"}}type="text" name="" id="" /></td>
+        <td className='tdNecesidadesP'><input style={{width:"89%",height:"38px"}}type="text" name="" id="" /></td>
+        <td className='tdNecesidadesP'><input style={{width:"94%",height:"38px"}}type="text" name="" id="" /></td>
+        <td className='tdNecesidadesP'><input style={{width:"94%",height:"38px"}}type="text" name="" id="" /></td>
+        <td className='tdNecesidadesP'><input style={{width:"97%",height:"38px"}}type="text" name="" id="" /></td>
       </tr>
 
     </tbody>
