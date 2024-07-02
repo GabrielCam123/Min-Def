@@ -7,7 +7,7 @@ import Salud from '../componentes/compSalud'
 import Header from '../header'
 function Hoja1() {
   return (
-    <div>
+    <div style={{backgroundColor:'white'}}>
         <Header/>
         <div>
           <Edan/>

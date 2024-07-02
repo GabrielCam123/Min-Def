@@ -6,7 +6,7 @@ import Responsable from '../componentes/compResponsable'
 import Declaratoria from '../componentes/compDeclaratoria'
 function Hoja4() {
   return (
-    <div>
+    <div style={{backgroundColor:'white'}}>
         <Header/>
         <div>
             <NecesidadesH/>

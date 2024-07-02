@@ -5,7 +5,7 @@ import ImpactoE from '../componentes/compImpactoE'
 import Header from '../header'
 function Hoja2() {
   return (
-        <div>
+        <div style={{backgroundColor:'white'}}>
             <Header/>
             <div>
               <ImpactoI/>

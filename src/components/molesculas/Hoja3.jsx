@@ -5,7 +5,7 @@ import ImpactoA from '../componentes/compImpactoA'
 import ImpactoP from '../componentes/compImpactoP'
 function Hoja3() {
   return (
-    <div>
+    <div style={{backgroundColor:'white'}}>
         <Header/>
         <div>
             <ImpactoV/>

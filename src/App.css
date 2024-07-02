@@ -1,6 +1,4 @@
 #root {
-  width: 950px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: white;
+  width: 100vw;
+  height: 100vh;
 }
