@@ -9,17 +9,18 @@
     flex-direction: row;
     height: auto;
     justify-content: space-between;
+    width: 40%;
 }
 .datos{
-    width: 880px;
+    width: 60%;
 }
 .datoseventos{
     display: flex;
-    width: 100%;
     height: auto;
     justify-content: flex-end;
+    width: 100%;
 }
 .datosalcalde{
     display:flex;
-    width:95%;
+    width: 100%;
 }
