@@ -1,18 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Texteinput from '../atomos/texteinput'
 import TexteSelectDepartamento from '../atomos/TexteSelectDepartamento';
 import TexteSelectMunicipio from '../atomos/TexteSelectMunicipio';
 import "./compDatosG.css"
 function compDatosG() {
+const[departamento,setState]=useState("");
+const[municipio,setMun]=useState("");
     const text1="Departamento :";const text2="Municipio :";const text3="N° Localidades afectadas :"
     return (
     <div className='contenedorcompDatosG'>
-
       <div className='localidad'>
         <h3>1. DATOS GENERALES</h3>
         {/* <Texteinput texto={text1} anchob={"100%"} anchop={"40%"} anchoi={"60%"}/> */}
-        <TexteSelectDepartamento/>
-        <TexteSelectMunicipio/>
+        <TexteSelectDepartamento handleChange={(e)=>{setState(e.target.value)}}/>
+          {/* {state&&(<TexteSelectMunicipio handleChange={(e)=>{setMun(e.target.value)}}/>)} */}
+        <TexteSelectMunicipio handleChange={(e)=>{setMun(e.target.value)}}/>
         {/* <Texteinput texto={text2} anchob={"100%"} anchop={"40%"} anchoi={"60%"}/> */}
         <Texteinput texto={text3} anchob={"100%"} anchop={"40%"} anchoi={"60%"}/>
       </div>
