@@ -22,6 +22,78 @@ function tablaNombreC() {
         <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
         <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
       </tr>
+      <tr>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+      </tr>
+      <tr>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+      </tr>
+      <tr>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+      </tr>
+      <tr>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+      </tr>
+      <tr>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+      </tr>
+      <tr>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+      </tr>
+      <tr>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+      </tr>
+      <tr>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+      </tr>
+      <tr>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
+      </tr>
     </tbody>
 
 </table>

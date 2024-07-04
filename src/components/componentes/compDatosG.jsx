@@ -12,9 +12,7 @@ const[municipio,setMun]=useState("");
       <div className='localidad'>
         <h3>1. DATOS GENERALES</h3>
         {/* <Texteinput texto={text1} anchob={"100%"} anchop={"40%"} anchoi={"60%"}/> */}
-        <TexteSelectDepartamento handleChange={(e)=>{setState(e.target.value)}}/>
-          {/* {state&&(<TexteSelectMunicipio handleChange={(e)=>{setMun(e.target.value)}}/>)} */}
-        <TexteSelectMunicipio handleChange={(e)=>{setMun(e.target.value)}}/>
+        <TexteSelectMunicipio/>
         {/* <Texteinput texto={text2} anchob={"100%"} anchop={"40%"} anchoi={"60%"}/> */}
         <Texteinput texto={text3} anchob={"100%"} anchop={"40%"} anchoi={"60%"}/>
       </div>
@@ -24,9 +22,9 @@ const[municipio,setMun]=useState("");
           <Texteinput texto={"Fono/Cel:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"100%"}/>
         </div>
         <div className='datoseventos'>
-          <Texteinput texto={"Hora del evento:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/> 
           <Texteinput texto={"Fecha llenado formulario:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>    
           <Texteinput texto={"Fecha evento adverso:"} anchob={"30%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>
+          <Texteinput texto={"Hora del evento:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/> 
         </div>
       </div> 
     </div>
