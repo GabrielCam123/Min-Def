@@ -13,19 +13,19 @@ function tablaNecesidadP() {
         <tr>
           <td className="tdNecesidadesP">Busqueda</td>
           <td className="tdNecesidadesP">
-            <input style={{width:"97%"}} type="text" name="" id="" />
+            <input style={{width:"98%"}} type="checkbox" name="" id="" />
           </td>
         </tr>
         <tr>
           <td className="tdNecesidadesP">Salvamento/rescate</td>
           <td className="tdNecesidadesP">
-            <input style={{width:"97%"}} type="text" name="" id="" />
+            <input style={{width:"98%"}} type="checkbox" name="" id="" />
           </td>
         </tr>
         <tr>
           <td className="tdNecesidadesP">Evacuacion</td>
           <td className="tdNecesidadesP">
-            <input style={{width:"97%"}} type="text" name="" id="" />
+            <input style={{width:"98%"}} type="checkbox" name="" id="" />
           </td>
         </tr>
       </tbody>

@@ -5,9 +5,8 @@ import TexteSelectMunicipio from '../atomos/TexteSelectMunicipio';
 import "./compDatosG.css"
 import TexteFecha from '../atomos/textefecha';
 import TexteHora from '../atomos/textehora';
+import Texteinputnumber from '../atomos/texteinputnumber';
 function compDatosG() {
-const[departamento,setState]=useState("");
-const[municipio,setMun]=useState("");
     const text1="Departamento :";const text2="Municipio :";const text3="N° Localidades afectadas :"
     return (
     <div className='contenedorcompDatosG'>
@@ -16,7 +15,7 @@ const[municipio,setMun]=useState("");
         {/* <Texteinput texto={text1} anchob={"100%"} anchop={"40%"} anchoi={"60%"}/> */}
         <TexteSelectMunicipio/>
         {/* <Texteinput texto={text2} anchob={"100%"} anchop={"40%"} anchoi={"60%"}/> */}
-        <Texteinput texto={text3} anchob={"100%"} anchop={"40%"} anchoi={"60%"}/>
+        <Texteinputnumber texto={text3} anchob={"100%"} anchop={"40%"} anchoi={"60%"}/>
       </div>
       <div className='datos'>
          <div className='datosalcalde'>
@@ -35,5 +34,4 @@ const[municipio,setMun]=useState("");
     </div>
   )
 }
-
 export default compDatosG

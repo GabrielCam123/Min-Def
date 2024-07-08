@@ -1,6 +1,12 @@
 import React from "react";
 import "./tablaServicioS.css";
 function tablaServicioS() {
+  const handleKeyPress=(e)=>{
+    const charCode=e.charCode;
+    if(charCode<48||charCode>57){
+        e.preventDefault();
+    }
+}
   return (
     <table className="tableServiciosS">
       <thead className="theadServiciosS">
@@ -108,7 +114,7 @@ function tablaServicioS() {
         <tr>
           <td className="tdServiciosS">
             <input
-              style={{ width: "85%", border: "none" }}
+              style={{ width: "90%", border: "none" }}
               type="text"
               name=""
               id=""
@@ -116,7 +122,7 @@ function tablaServicioS() {
           </td>
           <td className="tdServiciosS">
             <input
-              style={{ width: "96%", border: "none" }}
+              style={{ width: "98%", border: "none" }}
               type="text"
               name=""
               id=""
@@ -124,15 +130,7 @@ function tablaServicioS() {
           </td>
           <td className="tdServiciosS">
             <input
-              style={{ width: "96%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
+              style={{ width: "97%", border: "none" }}
               type="text"
               name=""
               id=""
@@ -141,7 +139,7 @@ function tablaServicioS() {
           <td className="tdServiciosS">
             <input
               style={{ width: "92%", border: "none" }}
-              type="text"
+              type="checkbox"
               name=""
               id=""
             />
@@ -149,7 +147,23 @@ function tablaServicioS() {
           <td className="tdServiciosS">
             <input
               style={{ width: "92%", border: "none" }}
-              type="text"
+              type="checkbox"
+              name=""
+              id=""
+            />
+          </td>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "92%", border: "none" }}
+              type="checkbox"
+              name=""
+              id=""
+            />
+          </td>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "90%", border: "none" }}
+              type="checkbox"
               name=""
               id=""
             />
@@ -157,562 +171,40 @@ function tablaServicioS() {
           <td className="tdServiciosS">
             <input
               style={{ width: "86%", border: "none" }}
-              type="text"
+              type="checkbox"
               name=""
               id=""
             />
           </td>
           <td className="tdServiciosS">
             <input
-              style={{ width: "86%", border: "none" }}
+              style={{ width: "95%", border: "none" }}
               type="text"
               name=""
               id=""
+              onKeyPress={handleKeyPress}
             />
           </td>
           <td className="tdServiciosS">
             <input
-              style={{ width: "91%", border: "none" }}
+              style={{ width: "95%", border: "none" }}
               type="text"
               name=""
               id=""
+              onKeyPress={handleKeyPress}
             />
           </td>
           <td className="tdServiciosS">
             <input
-              style={{ width: "80%", border: "none" }}
+              style={{ width: "95%", border: "none" }}
               type="text"
               name=""
               id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "91%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-        </tr>
-        <tr>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "85%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "96%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "96%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "86%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "86%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "91%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "80%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "91%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-        </tr>
-        <tr>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "85%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "96%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "96%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "86%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "86%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "91%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "80%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "91%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-        </tr>
-        <tr>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "85%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "96%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "96%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "86%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "86%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "91%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "80%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "91%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-        </tr>
-        <tr>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "85%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "96%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "96%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "86%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "86%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "91%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "80%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "91%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-        </tr>
-        <tr>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "85%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "96%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "96%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "92%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "86%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "86%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "91%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "80%", border: "none" }}
-              type="text"
-              name=""
-              id=""
-            />
-          </td>
-          <td className="tdServiciosS">
-            <input
-              style={{ width: "91%", border: "none" }}
-              type="text"
-              name=""
-              id=""
+              onKeyPress={handleKeyPress}
             />
           </td>
         </tr>
       </tbody>
-      {/* 
-          <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-          </tr>
-          <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-          </tr>
-        </tbody> */}
     </table>
   );
 }
