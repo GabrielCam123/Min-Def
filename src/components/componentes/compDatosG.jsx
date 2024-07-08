@@ -3,6 +3,8 @@ import Texteinput from '../atomos/texteinput'
 import TexteSelectDepartamento from '../atomos/TexteSelectDepartamento';
 import TexteSelectMunicipio from '../atomos/TexteSelectMunicipio';
 import "./compDatosG.css"
+import TexteFecha from '../atomos/textefecha';
+import TexteHora from '../atomos/textehora';
 function compDatosG() {
 const[departamento,setState]=useState("");
 const[municipio,setMun]=useState("");
@@ -22,9 +24,12 @@ const[municipio,setMun]=useState("");
           <Texteinput texto={"Fono/Cel:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"100%"}/>
         </div>
         <div className='datoseventos'>
-          <Texteinput texto={"Fecha llenado formulario:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>    
-          <Texteinput texto={"Fecha evento adverso:"} anchob={"30%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>
-          <Texteinput texto={"Hora del evento:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/> 
+          {/* <Texteinput texto={"Fecha llenado formulario:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>     */}
+          <TexteFecha texto={"Fecha llenado formulario:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>
+          {/* <Texteinput texto={"Fecha evento adverso:"} anchob={"30%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/> */}
+          <TexteFecha texto={"Fecha evento adverso:"} anchob={"30%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>
+          {/* <Texteinput texto={"Hora del evento:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>  */}
+          <TexteHora texto={"Hora del evento:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>
         </div>
       </div> 
     </div>
