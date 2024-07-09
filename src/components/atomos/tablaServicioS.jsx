@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./tablaServicioS.css";
 function tablaServicioS() {
   const handleKeyPress=(e)=>{
@@ -6,8 +6,18 @@ function tablaServicioS() {
     if(charCode<48||charCode>57){
         e.preventDefault();
     }
-}
+  }
+  const [rows,setRows]=useState([{id:1}])
+  const addRow=()=>{
+    setRows([...rows,{id:rows.length+1}])
+  }
+  const removeRow=()=>{
+    if(rows.length>1){
+      setRows(rows.slice(0,-1))
+    }
+  }
   return (
+  <div>
     <table className="tableServiciosS">
       <thead className="theadServiciosS">
         <tr>
@@ -111,13 +121,15 @@ function tablaServicioS() {
         </tr>
       </thead>
       <tbody style={{ width: "100%" }}>
-        <tr>
+        {rows.map((row,index)=>(
+        <tr key={row.id}>
           <td className="tdServiciosS">
             <input
               style={{ width: "90%", border: "none" }}
               type="text"
               name=""
               id=""
+              value={row.id}
             />
           </td>
           <td className="tdServiciosS">
@@ -204,8 +216,112 @@ function tablaServicioS() {
             />
           </td>
         </tr>
+        ))}
+        {rows.map((row,index)=>(
+        <tr key={row.id}>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "90%", border: "none" }}
+              type="text"
+              name=""
+              id=""
+              value={row.id}
+            />
+          </td>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "98%", border: "none" }}
+              type="text"
+              name=""
+              id=""
+            />
+          </td>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "97%", border: "none" }}
+              type="text"
+              name=""
+              id=""
+            />
+          </td>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "92%", border: "none" }}
+              type="checkbox"
+              name=""
+              id=""
+            />
+          </td>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "92%", border: "none" }}
+              type="checkbox"
+              name=""
+              id=""
+            />
+          </td>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "92%", border: "none" }}
+              type="checkbox"
+              name=""
+              id=""
+            />
+          </td>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "90%", border: "none" }}
+              type="checkbox"
+              name=""
+              id=""
+            />
+          </td>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "86%", border: "none" }}
+              type="checkbox"
+              name=""
+              id=""
+            />
+          </td>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "95%", border: "none" }}
+              type="text"
+              name=""
+              id=""
+              onKeyPress={handleKeyPress}
+            />
+          </td>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "95%", border: "none" }}
+              type="text"
+              name=""
+              id=""
+              onKeyPress={handleKeyPress}
+            />
+          </td>
+          <td className="tdServiciosS">
+            <input
+              style={{ width: "95%", border: "none" }}
+              type="text"
+              name=""
+              id=""
+              onKeyPress={handleKeyPress}
+            />
+          </td>
+        </tr>
+        ))}
       </tbody>
     </table>
+    <button onClick={addRow} style={{border:"1px solid black",backgroundColor:"white"}}>
+      Agregar fila
+    </button>
+    <button onClick={removeRow} style={{border:"1px solid black",backgroundColor:"white"}}>
+      Eliminar fila
+    </button>
+  </div>
   );
 }
 
