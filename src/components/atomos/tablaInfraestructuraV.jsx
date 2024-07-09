@@ -1,6 +1,12 @@
 import React from 'react'
 import "./tablaInfraestructuraV.css"
 function tablaInfraestructuraV() {
+  const handleKeyPress=(e)=>{
+    const charCode=e.charCode
+    if(charCode<48||charCode>57){
+      e.preventDefault();
+    }
+  }
   return (
     <table className='tableInfraestructuraV'>
     <thead className='theadInfraestructuraV'> 
@@ -17,48 +23,48 @@ function tablaInfraestructuraV() {
       <tr>
         <td className='tdInfraestructuraV'><input style={{width:("95%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
-        <td className='tdInfraestructuraV'><input style={{width:("94%")}} type="text" name="" id="" /></td>
-        <td className='tdInfraestructuraV'><input style={{width:("93%")}} type="text" name="" id="" /></td>
+        <td className='tdInfraestructuraV'><input onKeyPress={handleKeyPress} style={{width:("94%")}} type="text" name="" id="" /></td>
+        <td className='tdInfraestructuraV'><input onKeyPress={handleKeyPress} style={{width:("93%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
       </tr>
       <tr>
         <td className='tdInfraestructuraV'><input style={{width:("95%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
-        <td className='tdInfraestructuraV'><input style={{width:("94%")}} type="text" name="" id="" /></td>
-        <td className='tdInfraestructuraV'><input style={{width:("93%")}} type="text" name="" id="" /></td>
+        <td className='tdInfraestructuraV'><input onKeyPress={handleKeyPress} style={{width:("94%")}} type="text" name="" id="" /></td>
+        <td className='tdInfraestructuraV'><input onKeyPress={handleKeyPress} style={{width:("93%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
       </tr>
       <tr>
         <td className='tdInfraestructuraV'><input style={{width:("95%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
-        <td className='tdInfraestructuraV'><input style={{width:("94%")}} type="text" name="" id="" /></td>
-        <td className='tdInfraestructuraV'><input style={{width:("93%")}} type="text" name="" id="" /></td>
+        <td className='tdInfraestructuraV'><input onKeyPress={handleKeyPress} style={{width:("94%")}} type="text" name="" id="" /></td>
+        <td className='tdInfraestructuraV'><input onKeyPress={handleKeyPress} style={{width:("93%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
       </tr>
       <tr>
         <td className='tdInfraestructuraV'><input style={{width:("95%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
-        <td className='tdInfraestructuraV'><input style={{width:("94%")}} type="text" name="" id="" /></td>
-        <td className='tdInfraestructuraV'><input style={{width:("93%")}} type="text" name="" id="" /></td>
+        <td className='tdInfraestructuraV'><input onKeyPress={handleKeyPress} style={{width:("94%")}} type="text" name="" id="" /></td>
+        <td className='tdInfraestructuraV'><input onKeyPress={handleKeyPress} style={{width:("93%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
       </tr>
       <tr>
         <td className='tdInfraestructuraV'><input style={{width:("95%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
-        <td className='tdInfraestructuraV'><input style={{width:("94%")}} type="text" name="" id="" /></td>
-        <td className='tdInfraestructuraV'><input style={{width:("93%")}} type="text" name="" id="" /></td>
+        <td className='tdInfraestructuraV'><input onKeyPress={handleKeyPress} style={{width:("94%")}} type="text" name="" id="" /></td>
+        <td className='tdInfraestructuraV'><input onKeyPress={handleKeyPress} style={{width:("93%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
       </tr>
       <tr>
         <td className='tdInfraestructuraV'><input style={{width:("95%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
-        <td className='tdInfraestructuraV'><input style={{width:("94%")}} type="text" name="" id="" /></td>
-        <td className='tdInfraestructuraV'><input style={{width:("93%")}} type="text" name="" id="" /></td>
+        <td className='tdInfraestructuraV'><input onKeyPress={handleKeyPress} style={{width:("94%")}} type="text" name="" id="" /></td>
+        <td className='tdInfraestructuraV'><input onKeyPress={handleKeyPress} style={{width:("93%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
         <td className='tdInfraestructuraV'><input style={{width:("96%")}} type="text" name="" id="" /></td>
       </tr>

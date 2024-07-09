@@ -1,58 +1,50 @@
 import React,{useState} from "react";
 import "./tablaServicioS.css";
 function tablaServicioS() {
-  const initialRows=Array.from({length:6},(_,index)=>({id:index+1}))
-  const [isDañoParcialChecked, setDañoParcialCheked]=useState(false)
-  const [isDañoTotalChecked, setDañoTotalCheked]=useState(false)
-  const [is1erChecked,set1erCheked]=useState(false)
-  const [is2doChecked,set2doCheked]=useState(false)
-  const [is3erChecked,set3erCheked]=useState(false)
-  const handle3erChange=(e)=>{
-    set3erCheked(e.target.checked)
-    if(e.target.checked){
-      set2doCheked(false)
-      set1erCheked(false)
-    }
-  }
-  const handle2doChange=(e)=>{
-    set2doCheked(e.target.checked)
-    if(e.target.checked){
-      set1erCheked(false)
-      set3erCheked(false)
-    }
-  }
-  const handle1erChange=(e)=>{
-    set1erCheked(e.target.checked)
-    if(e.target.checked){
-      set2doCheked(false)
-      set3erCheked(false)
-    }
-  }
-  const handleDañoParcialChange=(e)=>{
-    setDañoParcialCheked(e.target.checked);
-    if(e.target.checked){
-      setDañoTotalCheked(false)
-    }
-  }
-  const handleDañoTotalChange=(e)=>{
-    setDañoTotalCheked(e.target.checked);
-    if(e.target.checked){
-      setDañoParcialCheked(false)
-    }
-  }
-  const handleKeyPress=(e)=>{
-    const charCode=e.charCode;
-    if(charCode<48||charCode>57){
-        e.preventDefault();
-    }
-  }
+  const initialRows=Array.from({length:6},(_,index)=>({
+    id:index+1,
+    is1erChecked:false,
+    is2doChecked:false,
+    is3erChecked:false,
+    isDañoParcialChecked:false,
+    isDañoTotalChecked:false,
+  }))
   const [rows,setRows]=useState(initialRows)
+  const handleCheckboxChange=(index,checkboxType)=>{
+    setRows(prevRows =>{
+      return prevRows.map((row,i)=>{
+        if(i===index){
+          switch(checkboxType){
+            case '1er':
+              return{...row, is1erChecked: !row.is1erChecked, is2doChecked:false, is3erChecked:false}
+            case '2do':
+              return{...row, is2doChecked: !row.is2doChecked, is1erChecked:false, is3erChecked:false}
+            case '3er':
+              return{...row, is3erChecked: !row.is3erChecked, is2doChecked:false, is1erChecked:false}
+            case 'DañoParcial':
+              return{...row, isDañoParcialChecked: !row.isDañoParcialChecked, isDañoTotalChecked:false}
+            case 'DañoTotal':
+              return{...row, isDañoTotalChecked: !row.isDañoTotalChecked, isDañoParcialChecked:false}
+            default:
+              return row;
+          }
+        }
+        return row;
+      })
+    })
+  }
   const addRow=()=>{
     setRows([...rows,{id:rows.length+1}])
   }
   const removeRow=()=>{
     if(rows.length>1){
       setRows(rows.slice(0,-1))
+    }
+  }
+  const handleKeyPress=(e)=>{
+    const charCode=e.charCode
+    if(charCode<48||charCode>57){
+      e.preventDefault();
     }
   }
   return (
@@ -168,7 +160,7 @@ function tablaServicioS() {
               type="text"
               name=""
               id=""
-              value={row.id}
+              value={row.id} readOnly
             />
           </td>
           <td className="tdServiciosS">
@@ -193,8 +185,8 @@ function tablaServicioS() {
               type="checkbox"
               name=""
               id=""
-              checked={is1erChecked}
-              onChange={handle1erChange}
+              checked={row.is1erChecked}
+              onChange={()=>handleCheckboxChange(index,'1er')}
             />
           </td>
           <td className="tdServiciosS">
@@ -203,8 +195,8 @@ function tablaServicioS() {
               type="checkbox"
               name=""
               id=""
-              checked={is2doChecked}
-              onChange={handle2doChange}
+              checked={row.is2doChecked}
+              onChange={()=>handleCheckboxChange(index,'2do')}
             />
           </td>
           <td className="tdServiciosS">
@@ -213,8 +205,8 @@ function tablaServicioS() {
               type="checkbox"
               name=""
               id=""
-              checked={is3erChecked}
-              onChange={handle3erChange}
+              checked={row.is3erChecked}
+              onChange={()=>handleCheckboxChange(index,'3er')}
             />
           </td>
           <td className="tdServiciosS">
@@ -223,8 +215,8 @@ function tablaServicioS() {
               type="checkbox"
               name=""
               id=""
-              checked={isDañoParcialChecked}
-              onChange={handleDañoParcialChange}
+              checked={row.isDañoParcialChecked}
+              onChange={()=>handleCheckboxChange(index,'DañoParcial')}
             />
           </td>
           <td className="tdServiciosS">
@@ -233,8 +225,8 @@ function tablaServicioS() {
               type="checkbox"
               name=""
               id=""
-              checked={isDañoTotalChecked}
-              onChange={handleDañoTotalChange}
+              checked={row.isDañoTotalChecked}
+              onChange={() => handleCheckboxChange(index,'DañoTotal')}
             />
           </td>
           <td className="tdServiciosS">
