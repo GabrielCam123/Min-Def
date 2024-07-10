@@ -1,6 +1,17 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./tablasNecesidadesP.css"
 function tablasNecesidadesP() {
+  const initialRows=Array.from({length:7},(_,index)=>({
+    id:index+1,
+    poblacion:["Niñas y niños","Adolecentes","Mujeres Lactantes","Mujeres Embarazadas","Adultos Mayores","Personas con discapacidad","Personas con Enfermedad inahilitante"],
+  }))
+  const [rows,setRows]=useState(initialRows)
+  const handleKeyPress=(e)=>{
+    const charCode=e.charCode
+    if(charCode<48||charCode>57){
+      e.preventDefault();
+    }
+  }
   return (
     <table className='tableNecesidadesP'>
     <thead className='theadNecesidadesP'> 
@@ -21,76 +32,18 @@ function tablasNecesidadesP() {
         </tr>
     </thead>
     <tbody>
+      {rows.map((row,index)=>(
       <tr>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>1</p></td>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>Niñas y Niños</p></td>
-        <td className='tdNecesidadesP'><input style={{width:"92%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"91%"}}type="text" name="" id="" /></td>
+        <td className='tdNecesidadesP'> <input type="text" style={{width:"90%"}}value={row.id} readOnly/></td>
+        <td className='tdNecesidadesP'><input type="text" style={{width:"98%"}} value={row.poblacion[index]} readOnly/></td>
+        <td className='tdNecesidadesP'><input style={{width:"92%"}} onKeyPress={handleKeyPress}type="text" name="" id="" /></td>
+        <td className='tdNecesidadesP'><input style={{width:"91%"}} onKeyPress={handleKeyPress}type="text" name="" id="" /></td>
         <td className='tdNecesidadesP'><input style={{width:"89%"}}type="text" name="" id="" /></td>
         <td className='tdNecesidadesP'><input style={{width:"94%"}}type="text" name="" id="" /></td>
         <td className='tdNecesidadesP'><input style={{width:"94%"}}type="text" name="" id="" /></td>
         <td className='tdNecesidadesP'><input style={{width:"97%"}}type="text" name="" id="" /></td>
       </tr>
-      <tr>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>2</p></td>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>Adolecentes</p></td>
-        <td className='tdNecesidadesP'><input style={{width:"92%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"91%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"89%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"97%"}}type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>3</p></td>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>Mujeres Lactantes</p></td>
-        <td className='tdNecesidadesP'><input style={{width:"92%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"91%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"89%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"97%"}}type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>4</p></td>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>Mujeres Embarazadas</p></td>
-        <td className='tdNecesidadesP'><input style={{width:"92%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"91%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"89%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"97%"}}type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>5</p></td>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>Adultos Mayores</p></td>
-        <td className='tdNecesidadesP'><input style={{width:"92%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"91%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"89%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"97%"}}type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>6</p></td>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>Personas con Discapacidad</p></td>
-        <td className='tdNecesidadesP'><input style={{width:"92%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"91%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"89%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"97%"}}type="text" name="" id="" /></td>
-      </tr>
-      <tr>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>7</p></td>
-        <td className='tdNecesidadesP'><p style={{margin:"3px"}}>Personas con Enfermedad Inhabilitante</p></td>
-        <td className='tdNecesidadesP'><input style={{width:"92%",height:"38px"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"91%",height:"38px"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"89%",height:"38px"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%",height:"38px"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"94%",height:"38px"}}type="text" name="" id="" /></td>
-        <td className='tdNecesidadesP'><input style={{width:"97%",height:"38px"}}type="text" name="" id="" /></td>
-      </tr>
+      ))}
 
     </tbody>
 
