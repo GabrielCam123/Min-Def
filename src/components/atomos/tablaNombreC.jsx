@@ -31,9 +31,9 @@ function tablaNombreC() {
       <tr key={row.id}>
         <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" value={row.id} readOnly/></td>
         <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
-        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" value={row.id+rows.length}/></td>
         <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
-        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" /></td>
+        <td className='thNombreC'><input style={{width:"85%"}} type="text" name="" id="" value={row.id+2*rows.length}/></td>
         <td className='thNombreC'><input style={{width:"97%"}} type="text" name="" id="" /></td>
       </tr>
       ))}
