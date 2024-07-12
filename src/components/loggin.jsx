@@ -1,19 +1,81 @@
-import React from 'react'
-import "./loggin.css"
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import "./loggin.css";
+import { Link, useNavigate } from "react-router-dom";
 function loggin() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('http://localhost:5000/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        navigate('/Formulario');
+      } else {
+        alert(data.error);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
   return (
     <div className='contenedorloggin'>
-      <div style={{display:'flex',flexDirection:'column',gap:"10px"}}>
-        <img src="../../public/VIDECI.png" style={{width:"228px",height:"241px"}} alt="" />
-        <input type="text" name="" id="" style={{background:"none",height:"32px",border:"solid black 1px",borderRadius:"3px",color:'black',fontWeight:"600"}} placeholder='UserName' />
-        <input type="text" name="" id="" style={{background:"none",height:"32px",border:"solid black 1px",borderRadius:"3px",color:'black',fontWeight:"600"}} placeholder='Password' />
-        <Link to='/Formulario' >
-          <button style={{backgroundColor:"rgba(48, 251, 251, 0.66)",width:"100%"}} type="submit">Login</button>
-        </Link>
+      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+        <img
+          src="../../public/VIDECI.png"
+          style={{ width: "228px", height: "241px" }}
+          alt=""
+        />
+        <input
+          type="text"
+          name=""
+          id=""
+          style={{
+            background: "none",
+            height: "32px",
+            border: "solid black 1px",
+            borderRadius: "3px",
+            color: "black",
+            fontWeight: "600",
+          }}
+          placeholder="UserName"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input
+          type="password"
+          name=""
+          id=""
+          style={{
+            background: "none",
+            height: "32px",
+            border: "solid black 1px",
+            borderRadius: "3px",
+            color: "black",
+            fontWeight: "600",
+          }}
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        {/* <Link to='/Formulario' > */}
+        <button
+          style={{ backgroundColor: "rgba(48, 251, 251, 0.66)", width: "100%" }}
+          onClick={handleLogin}
+        >
+          Login
+        </button>
+        {/* </Link> */}
       </div>
     </div>
-  )
+  );
 }
 
-export default loggin
+export default loggin;
