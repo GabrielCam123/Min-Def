@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import "./loggin.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 function loggin() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -17,12 +17,14 @@ function loggin() {
       });
       const data = await response.json();
       if (response.ok) {
-        navigate('/Formulario');
+        localStorage.setItem('token',data.token);
+        navigate('/Formulario')
       } else {
         alert(data.error);
       }
     } catch (error) {
       console.error('Error:', error);
+      alert('Error al iniciar sesion. por Favor, intentalo de nuevo mas tarde.')
     }
   };
   return (
@@ -50,7 +52,7 @@ function loggin() {
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
-          type="password"
+          type="text"
           name=""
           id=""
           style={{
