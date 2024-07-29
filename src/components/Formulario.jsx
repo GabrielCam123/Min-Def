@@ -8,10 +8,11 @@ import Hoja4 from './molesculas/Hoja4'
 
 function Formulario() {
   const navigate=useNavigate();
+
   useEffect(()=>{
     const token=localStorage.getItem('token')
     if(!token){
-      navigate('/login');
+      navigate('/');
     }else{
       fetch('http://localhost:5000/formulario',{
         headers:{
@@ -20,11 +21,11 @@ function Formulario() {
       })
       .then(response=>{
         if(!response.ok){
-          navigate('/login')
+          navigate('/')
         }
       })
       .catch(()=>{
-        navigate('/login')
+        navigate('/')
       })
     }
   }, [navigate])
