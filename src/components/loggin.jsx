@@ -53,7 +53,7 @@ function loggin() {
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
-          type="text"
+          type='password'
           name=""
           id=""
           style={{
