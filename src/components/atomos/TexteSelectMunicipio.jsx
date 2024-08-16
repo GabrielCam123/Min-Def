@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
 import TexteSelectDepartamento from './TexteSelectDepartamento'
+import e from 'cors'
 function TexteSelectMunicipio() {
   const [selectedCity, setSelectCity]=useState('SELECCIONE')
+  const[SelectedDepartamento,setSelectedDepartamento]=useState('SELECCIONE')
   const options={
     'SELECCIONE':['Selecione su departamento'],
     'BENI':['Selecione su municipio','BAURES','EXALTACION','GUAYARAMERÍN','HUACARAJE','LORETO','MAGDALENA','PUERTO SILES','REYES','RIBERALTA','RURRENABAQUE','SAN ANDRÉS','SAN BORJA','SAN IGNACIO','SAN JAVIER','SAN JOAQUÍN','SAN RAMÓN','SANTA ANA DE YACUMA','SANTA ROSA','TRINIDAD',],
@@ -17,6 +19,32 @@ function TexteSelectMunicipio() {
   const handleCityChange=(city)=>{
     setSelectCity(city);
   }
+  const handleDepartamentoChange=(departamento)=>{
+    setSelectedDepartamento(departamento)
+  };
+  const handleSubmit = async () =>{
+    const data={
+      departamento: SelectedDepartamento,
+      municipio: selectedCity
+    };
+  try{
+    const response= await fetch('http://localhost:5000/api/submit-data',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+    if(response.ok){
+      alert('Datos enviados con exito');
+    }else{
+      alert('Error al enviar los datos');
+    }
+  }
+  catch(error){
+    console.error('Error:',error);
+    alert('Ocurrio un error al enviar los datos')
+  }
   return (
     <div>
       <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',flexDirection:'column'}}>
@@ -25,14 +53,15 @@ function TexteSelectMunicipio() {
       </div>
       <div style={{width:"100%",display:'flex',marginTop:"10px"}}>
         <p style={{width:"40%"}}>Municipio:</p>
-        <select name="Municipio" id="municipio" style={{backgroundColor:'white',width:"60%",border:"black solid",height:"38px"}}>
+        <select name="Municipio" id="municipio" style={{backgroundColor:'white',width:"60%",border:"black solid",height:"38px"}} onChange={(e) => handleDepartamentoChange(e.target.value)}>
             {options[selectedCity].map((option, index)=>(
               <option key={index} value={option}>{option}</option>
             ))}
         </select>
       </div>
+      {/* <button onClick={handleSubmit}>Enviar</button> */}
     </div>
   )
+ }
 }
-
 export default TexteSelectMunicipio

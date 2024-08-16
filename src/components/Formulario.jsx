@@ -32,9 +32,9 @@ function Formulario() {
   return (
     <div classname='estiloFormulario'>
       <Hoja1/>
-      <Hoja2/>
+      {/* <Hoja2/>
       <Hoja3/>
-      <Hoja4/>
+      <Hoja4/> */}
     </div>
   )
 }
