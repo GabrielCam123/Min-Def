@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import TexteSelectDepartamento from './TexteSelectDepartamento'
-import e from 'cors'
 function TexteSelectMunicipio() {
   const [selectedCity, setSelectCity]=useState('SELECCIONE')
   const[SelectedDepartamento,setSelectedDepartamento]=useState('SELECCIONE')
@@ -48,18 +47,18 @@ function TexteSelectMunicipio() {
   return (
     <div>
       <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',flexDirection:'column'}}>
-      <TexteSelectDepartamento defaultOption={selectedCity} onChange={handleCityChange}/>
+      <TexteSelectDepartamento defaultOption={selectedCity} onChange={handleDepartamentoChange}/>
 
       </div>
       <div style={{width:"100%",display:'flex',marginTop:"10px"}}>
         <p style={{width:"40%"}}>Municipio:</p>
-        <select name="Municipio" id="municipio" style={{backgroundColor:'white',width:"60%",border:"black solid",height:"38px"}} onChange={(e) => handleDepartamentoChange(e.target.value)}>
+        <select name="Municipio" id="municipio" style={{backgroundColor:'white',width:"60%",border:"black solid",height:"38px"}} onChange={(e) => handleCityChange(e.target.value)}>
             {options[selectedCity].map((option, index)=>(
               <option key={index} value={option}>{option}</option>
             ))}
         </select>
       </div>
-      {/* <button onClick={handleSubmit}>Enviar</button> */}
+      <button onClick={handleSubmit}>Enviar</button>
     </div>
   )
  }
