@@ -24,13 +24,13 @@ function TexteSelectMunicipio() {
   const handleSubmit = async () =>{
     const data={
       departamento: SelectedDepartamento,
-      municipio: selectedCity
+      municipio: selectedCity,
     };
   try{
     const response= await fetch('http://localhost:5000/api/submit-data',{
-      method:'POST',
+      method:"POST",
       headers:{
-        'Content-Type':'application/json',
+        "Content-Type":"application/json",
       },
       body: JSON.stringify(data),
     });
@@ -44,16 +44,17 @@ function TexteSelectMunicipio() {
     console.error('Error:',error);
     alert('Ocurrio un error al enviar los datos')
   }
+  }
   return (
     <div>
       <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',flexDirection:'column'}}>
-      <TexteSelectDepartamento defaultOption={selectedCity} onChange={handleDepartamentoChange}/>
+      <TexteSelectDepartamento defaultOption={SelectedDepartamento} onChange={handleDepartamentoChange}/>
 
       </div>
       <div style={{width:"100%",display:'flex',marginTop:"10px"}}>
         <p style={{width:"40%"}}>Municipio:</p>
-        <select name="Municipio" id="municipio" style={{backgroundColor:'white',width:"60%",border:"black solid",height:"38px"}} onChange={(e) => handleCityChange(e.target.value)}>
-            {options[selectedCity].map((option, index)=>(
+        <select name="Municipio" id="municipio" style={{backgroundColor:'white',width:"60%",border:"black solid",height:"38px"}}value={selectedCity} onChange={(e) => handleCityChange(e.target.value)}>
+            {options[SelectedDepartamento].map((option, index)=>(
               <option key={index} value={option}>{option}</option>
             ))}
         </select>
@@ -62,5 +63,4 @@ function TexteSelectMunicipio() {
     </div>
   )
  }
-}
 export default TexteSelectMunicipio
