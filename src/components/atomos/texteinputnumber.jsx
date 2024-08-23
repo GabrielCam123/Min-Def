@@ -11,7 +11,7 @@ function texteinputnumber(props) {
   return (
     <div className='contenedorTexteinput' style={{width:(props.anchob),flexDirection:(props.direccion)}}>
         <p style={{width:(props.anchop),marginBottom:(props.marginb)}} className='textp'>{props.texto}</p>
-        <input style={{width:(props.anchoi)}}className='textinput' type="text" name="" id="" onKeyPress={handleKeyPress}/>
+        <input style={{width:(props.anchoi)}}className='textinput' type="text" value={props.value} onChange={props.onChange} name="" id="" onKeyPress={handleKeyPress}/>
     </div>
   )
 }

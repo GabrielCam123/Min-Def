@@ -9,6 +9,8 @@ function compDatosG() {
     const[departamento,setDepartamento]=useState('')
     const[municipio,setMunicipio]=useState('')
     const[localidadesAfectadas,setLocalidadesAfectadas]=useState('')
+    const[fechaDoc,setFechaDoc]=useState('')
+    const[fechaEvento,setFechaEvento]=useState('')
     const text1="Departamento :"
     const text2="Municipio :"
     const text3="N° Localidades afectadas :"
@@ -18,11 +20,27 @@ function compDatosG() {
     const handleMunicipioChange=(selectedMunicipio)=>{
       setMunicipio(selectedMunicipio)
     }
+    const handleLocalidadesChange=(e)=>{
+      setLocalidadesAfectadas(e.target.value)
+    }
+    const handleFechaDocChange=(e)=>{
+      setFechaDoc(e.target.value)
+    }
+    const handleFechaEventoChange=(e)=>{
+      setFechaEvento(e.target.value)
+    }
     const handleSubmit= async()=>{
+      const parsedLocalidadesAfectadas=parseInt(localidadesAfectadas,10)
+      if(isNaN(parsedLocalidadesAfectadas)){
+        alert('Por favor , ingrese un numero valido para las localidades afectadas')
+        return;
+      }
       const data = {
         departamento,
         municipio,
-        localidadesAfectadas,
+        localidadesAfectadas:parsedLocalidadesAfectadas,
+        fecha_evento:fechaEvento,
+        fecha_doc:fechaDoc,
       }
       try{
         const response = await fetch('http://localhost:5000/api/submit-data',{
@@ -48,13 +66,11 @@ function compDatosG() {
     <div className='contenedorcompDatosG'>
       <div className='localidad'>
         <h3>1. DATOS GENERALES</h3>
-        {/* <Texteinput texto={text1} anchob={"100%"} anchop={"40%"} anchoi={"60%"}/> */}
         <TexteSelectMunicipio 
           onDepartamentoChange={handleDepartamentoChange}
           onMunicipioChange={handleMunicipioChange}
         />
-        {/* <Texteinput texto={text2} anchob={"100%"} anchop={"40%"} anchoi={"60%"}/> */}
-        <Texteinputnumber texto={text3} anchob={"100%"} anchop={"40%"} anchoi={"60%"} value={localidadesAfectadas} onChange={(e)=> setLocalidadesAfectadas(e.target.value)}/>
+        <Texteinputnumber texto={text3} anchob={"100%"} anchop={"40%"} anchoi={"60%"} value={localidadesAfectadas} onChange={handleLocalidadesChange}/>
       </div>
       <div className='datos'>
          <div className='datosalcalde'>
@@ -62,11 +78,8 @@ function compDatosG() {
           <Texteinput texto={"Fono/Cel:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"100%"}/>
         </div>
         <div className='datoseventos'>
-          {/* <Texteinput texto={"Fecha llenado formulario:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>     */}
-          <TexteFecha texto={"Fecha llenado formulario:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>
-          {/* <Texteinput texto={"Fecha evento adverso:"} anchob={"30%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/> */}
-          <TexteFecha texto={"Fecha evento adverso:"} anchob={"30%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>
-          {/* <Texteinput texto={"Hora del evento:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>  */}
+          <TexteFecha texto={"Fecha llenado formulario:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}value={fechaDoc} onChange={handleFechaDocChange}/>
+          <TexteFecha texto={"Fecha evento adverso:"} anchob={"30%"} direccion={"column"} marginb={"3px"} anchoi={"80%"} value={fechaEvento} onChange={handleFechaEventoChange}/>
           <TexteHora texto={"Hora del evento:"} anchob={"35%"} direccion={"column"} marginb={"3px"} anchoi={"80%"}/>
         </div>
       </div> 

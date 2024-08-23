@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import TexteSelectDepartamento from './TexteSelectDepartamento'
 function TexteSelectMunicipio({onDepartamentoChange,onMunicipioChange}) {
-  const [selectedCity, setSelectCity]=useState('SELECCIONE')
-  // const[SelectedDepartamento,setSelectedDepartamento]=useState('SELECCIONE')
+  const [selectedDepartamento, setSelectedDepatamento]=useState('SELECCIONE')
+  const[selectedMunicipio,setSelectedMunicipio]=useState('SELECCIONE')
   const options={
     'SELECCIONE':['Selecione su departamento'],
     'BENI':['Selecione su municipio','BAURES','EXALTACION','GUAYARAMERÍN','HUACARAJE','LORETO','MAGDALENA','PUERTO SILES','REYES','RIBERALTA','RURRENABAQUE','SAN ANDRÉS','SAN BORJA','SAN IGNACIO','SAN JAVIER','SAN JOAQUÍN','SAN RAMÓN','SANTA ANA DE YACUMA','SANTA ROSA','TRINIDAD',],
@@ -15,20 +15,25 @@ function TexteSelectMunicipio({onDepartamentoChange,onMunicipioChange}) {
     'SANTA CRUZ':['Selecione su municipio','ASCENCIÓN DE GUARAYOS','BOYUIBE','BUENA VISTA','CABEZAS','CAMIRI','CARMEN RIVERO TORREZ','CHARAGUA IYAMBAE','COLPA BELGICA','COMARAPA','CONCEPCIÓN','COTOCA','CUATRO CAÑADAS','CUEVO','EL PUENTE','EL TORNO','FERNANDEZ ALONSO','GENERAL SAAVEDRA','KEREIMBA IYAMBAE (GUTIÉRREZ)','LA GUARDIA','LAGUNILLAS','MAIRANA','MINEROS','MONTERO','MORO MORO','OKINAWA UNO','PAILÓN','PAMPA GRANDE','PORONGO (AYACUCHO)','PORTACHUELO','POSTRER VALLE','PUCARA','PUERTO QUIJARRO','PUERTO SUAREZ','QUIRUSILLAS','ROBORE','SAIPINA','SAMAIPATA','SAN ANTONIO DE LOMERIO','SAN CARLOS','SAN IGNACIO DE VELASCO','SAN JAVIER','SAN JOSE DE CHIQUITOS','SAN JUAN','SAN JULIÁN','SAN MATÍAS','SAN MIGUEL DE VELASCO','SAN PEDRO','SAN RAFAEL','SAN RAMÓN','SANTA CRUZ DE LA SIERRA','SANTA ROSA DEL SARA','TRIGAL','URUBICHA','VALLEGRANDE','WARNES','YAPACANÍ',],
     'TARIJA':['Selecione su municipio','BERMEJO','CARAPARÍ','ENTRE RIOS (LA MORETA)','PADCAYA','TARIJA','TOMAYAPO (EL PUENTE)','URIONDO','VILLA SAN LORENZO','VILLAMONTES','YACUIBA','YUNCHARA',]
   }
-  const handleCityChange=(city)=>{
-    setSelectCity(city);
-    onMunicipioChange(city)
+  const handleDepartamentoChange=(departamento)=>{
+    setSelectedDepatamento(departamento);
+    setSelectedMunicipio('Sleccione su municipio')
+    onDepartamentoChange(departamento)
+  }
+  const handleMunicipioChange=(municipio)=>{
+    setSelectedMunicipio(municipio);
+    onMunicipioChange(municipio)
   }
   return (
     <div>
       <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',flexDirection:'column'}}>
-      <TexteSelectDepartamento defaultOption={selectedCity} onChange={handleCityChange}/>
+      <TexteSelectDepartamento defaultOption={selectedDepartamento} onChange={handleDepartamentoChange}/>
 
       </div>
       <div style={{width:"100%",display:'flex',marginTop:"10px"}}>
         <p style={{width:"40%"}}>Municipio:</p>
-        <select name="Municipio" id="municipio" style={{backgroundColor:'white',width:"60%",border:"black solid",height:"38px"}}value={selectedCity} onChange={(e) => handleCityChange(e.target.value)}>
-            {options[selectedCity].map((option, index)=>(
+        <select name="Municipio" id="municipio" style={{backgroundColor:'white',width:"60%",border:"black solid",height:"38px"}}value={selectedMunicipio} onChange={(e) => handleMunicipioChange(e.target.value)}>
+            {options[selectedDepartamento].map((option, index)=>(
               <option key={index} value={option}>{option}</option>
             ))}
         </select>

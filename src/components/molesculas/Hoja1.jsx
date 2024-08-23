@@ -12,9 +12,9 @@ function Hoja1() {
         <div>
           <Edan/>
           <DatosG/>
-          {/* <InfoP/>
+          <InfoP/>
           <InfoM/>
-          <Salud/> */}
+          <Salud/>
         </div>
         <footer style={{fontSize:"20px",fontWeight:"600",textAlign:'right',margin:"20px"}}>Sello del Gobierno Autonomo Municipal</footer>
     </div>
